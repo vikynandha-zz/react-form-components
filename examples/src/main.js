@@ -5,10 +5,10 @@ require.config({
     }
 });
 
-require(['React', 'Textarea'], function(React, Textarea) {
+require(['React', 'Textarea', 'Form'], function(React, Textarea, Form) {
 
     React.render(
-        <form action=".">
+        <Form action=".">
             <div className="form-group">
                 <input type="text" name="title" defaultValue=""
                     className="form-control"/>
@@ -16,7 +16,7 @@ require(['React', 'Textarea'], function(React, Textarea) {
             <div className="form-group">
                 <Textarea name="description" className="form-control"/>
             </div>
-        </form>,
+        </Form>,
         document.getElementById('container')
     );
 
