@@ -11,9 +11,17 @@ define(['React'], function(React) {
         },
 
         componentDidMount: function() {
-            var form = React.findDOMNode(this);
-            var firstField = form.querySelector('input, textarea, select, button');
-            firstField.focus();
+            var form = this.getDOMNode();
+            var autofocusField =
+                    form.querySelector('[autofocus]:not([type="hidden"]') ||
+                    form.querySelector('[data-autofocus]:not([type="hidden"]');
+
+            if (!autofocusField) {
+                autofocusField = form.querySelector(
+                    'input:not([type="hidden"]), textarea, select, button'
+                );
+            }
+            autofocusField.focus();
         }
 
     });

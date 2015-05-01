@@ -5,7 +5,7 @@ define(['React'], function(React) {
     var Textarea = React.createClass({
 
         getFormNode: function() {
-            var element = React.findDOMNode(this);
+            var element = this.getDOMNode();
             var tagname = 'form';
             do {
                 if(element.nodeName.toLowerCase() === tagname) {
