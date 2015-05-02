@@ -20,7 +20,8 @@ define(['React'], function(React) {
             if (e.ctrlKey && e.keyCode===ENTER_KEY) {
                 var formNode = this.getFormNode();
                 if (formNode) {
-                    formNode.submit();
+                    var submitEvent = new Event('submit');
+                    formNode.dispatchEvent(submitEvent);
                 } else {
                     console.warn('No form element found around the textarea');
                 }
