@@ -20,16 +20,26 @@ define(['React'], function(React) {
             if (e.ctrlKey && e.keyCode===ENTER_KEY) {
                 var formNode = this.getFormNode();
                 if (formNode) {
-                    formNode.submit();
+                    var submitEvent = new Event('submit');
+                    formNode.dispatchEvent(submitEvent);
                 } else {
                     console.warn('No form element found around the textarea');
                 }
             }
         },
 
+        handleKeyup: function(e) {
+            if (this.props.onKeyUp) {
+                this.props.onKeyUp.apply(this, arguments);
+            }
+            if (!e.isDefaultPrevented()) {
+                this.checkForCtrlEnter(e);
+            }
+        },
+
         render: function() {
             return (
-                <textarea {...this.props} onKeyUp={this.checkForCtrlEnter}></textarea>
+                <textarea {...this.props} onKeyUp={this.handleKeyup}></textarea>
             );
         }
 

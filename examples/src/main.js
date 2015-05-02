@@ -27,6 +27,9 @@ require(['React', 'Textarea', 'Form'], function(React, Textarea, Form) {
                 <Textarea name="description" className="form-control"
                     placeholder="Description"/>
             </div>
+            <div className="form-group">
+                <button className="btn btn-primary" type="submit">Submit</button>
+            </div>
         </Form>,
         document.getElementById('container')
     );
