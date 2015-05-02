@@ -33,7 +33,7 @@ define(['React'], function(React) {
                 this.props.onKeyUp.apply(this, arguments);
             }
             if (!e.isDefaultPrevented()) {
-                this.checkForCtrlEnter();
+                this.checkForCtrlEnter(e);
             }
         },
 
