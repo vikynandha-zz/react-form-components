@@ -38,8 +38,9 @@ define(['React'], function(React) {
         },
 
         render: function() {
+            var {onKeyUp, ...otherProps} = this.props;
             return (
-                <textarea {...this.props} onKeyUp={this.handleKeyup}></textarea>
+                <textarea onKeyUp={this.handleKeyup} {...otherProps}></textarea>
             );
         }
 
