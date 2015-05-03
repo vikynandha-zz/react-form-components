@@ -7,8 +7,9 @@ define(['React'], function(React) {
         },
 
         render: function() {
+            var {onSubmit, ...otherProps} = this.props;
             return (
-                <form {...this.props} onSubmit={this.props.onSubmit||this.onSubmit}>
+                <form onSubmit={onSubmit||this.onSubmit} {...otherProps}>
                     {this.props.children}
                 </form>
             );
