@@ -7,7 +7,7 @@
   "description": "Smarter drop-in replacements for native form & textarea elements",
   "main": "src/main.js",
   "moduleType": [
-    "amd"
+    "node"
   ],
   "keywords": [
     "react",
@@ -24,7 +24,6 @@
     "tests"
   ],
   "dependencies": {
-    "react": "~0.13.2",
-    "requirejs": "~2.1.17"
+    "react": "~0.13.2"
   }
 }
