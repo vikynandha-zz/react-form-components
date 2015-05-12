@@ -1,4 +1,4 @@
-var React = require('React');
+var React = require('react');
 var ENTER_KEY = 13;
 
 var Textarea = React.createClass({
