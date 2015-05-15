@@ -17,8 +17,8 @@ var Form = React.createClass({
   componentDidMount: function() {
     var form = this.getDOMNode();
     var autofocusField =
-      form.querySelector('[autofocus]:not([type="hidden"]') ||
-      form.querySelector('[data-autofocus]:not([type="hidden"]');
+      form.querySelector('[autofocus]:not([type="hidden"])') ||
+      form.querySelector('[data-autofocus]:not([type="hidden"])');
 
     if (!autofocusField) {
       autofocusField = form.querySelector(
