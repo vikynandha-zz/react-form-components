@@ -1,8 +1,9 @@
-var React = require('React');
+var React = require('react');
+var ReactDOM = require('react-dom');
 var Textarea = require('../../src/Textarea');
 var Form = require('../../src/Form');
 
-React.render(
+ReactDOM.render(
     <Form action=".">
         <div className="form-group">
             <input type="text" name="dummy"
@@ -28,4 +29,3 @@ React.render(
     </Form>,
     document.getElementById('container')
 );
-

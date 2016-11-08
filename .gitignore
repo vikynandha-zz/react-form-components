@@ -3,3 +3,6 @@
 .tern-port
 .tern-project
 build/
+/examples/node_modules/
+.idea
+examples/npm-debug.log

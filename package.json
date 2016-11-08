@@ -1,0 +1,34 @@
+{
+  "name": "react-form-components",
+  "version": "1.0.0",
+  "description": "Smarter drop-in replacements for native form &amp; textarea elements",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aplopio/react-form-components.git"
+  },
+  "author": "rbox-dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aplopio/react-form-components/issues"
+  },
+  "homepage": "https://github.com/Aplopio/react-form-components#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "grunt": "0.4.5",
+    "grunt-browserify": "^5.0.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
+  }
+}
