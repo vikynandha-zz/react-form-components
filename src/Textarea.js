@@ -1,10 +1,11 @@
 var React = require('react');
+var ReactDOM = require('react-dom');
 var ENTER_KEY = 13;
 
 var Textarea = React.createClass({
 
   getFormNode: function() {
-    var element = this.getDOMNode();
+    var element = ReactDOM.findDOMNode(this);
     var tagname = 'form';
     do {
       if(element.nodeName.toLowerCase() === tagname) {
@@ -46,4 +47,3 @@ var Textarea = React.createClass({
 });
 
 module.exports = Textarea;
-
